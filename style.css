@@ -20,6 +20,50 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.container  {
+  display: flex;
+  flex-direction: row;
+  width: 100rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bg-btn {
+  height: 3rem;
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  margin: 0.7rem;
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  border: 2px solid white;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+#change-bg-1 {
+  background-image: linear-gradient(to top left, #120249 0%, #8044f0 100%);
+}
+#change-bg-2 {
+  background-image: linear-gradient(to top left, #012e15 0%, #45fcc5 100%);
+}
+#change-bg-3 {
+  background-image: linear-gradient(to top left, #031949 0%, #0973fd 100%);
+}
+#change-bg-4 {
+  background-image: linear-gradient(to top left, #817903 0%, #f0fd3b 100%);
 }
 
 /* LAYOUT */
@@ -46,7 +90,17 @@ main {
 }
 
 /* ELEMENTS */
-.name {
+.name1 {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.name2 {
   position: relative;
   font-size: 4rem;
   text-transform: uppercase;
@@ -158,10 +212,15 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #303030;
 }
 
-.player--winner .name {
+.player--winner .name1 {
+  font-weight: 700;
+  color: #c7365f;
+}
+
+.player--winner .name2 {
   font-weight: 700;
   color: #c7365f;
 }
